@@ -19,7 +19,8 @@ body {
 header {
     background: linear-gradient(to bottom, #000000, #777);
     padding: 20px;
-    max-width: 100vw; /* Garante que o header não ultrapasse a largura da tela */
+    max-width: 100%; /* Garante que o header não ultrapasse a largura da tela */
+    box-sizing: border-box; /* Inclui padding no cálculo de largura */
 }
 
 nav ul {
@@ -40,12 +41,13 @@ nav a {
 .sobre {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.897);
-    max-width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .imagem img {
-    width: 80%;
-    max-width: 600px;
+    width: 100%; /* A imagem será responsiva e ocupará 100% da largura disponível */
+    max-width: 600px; /* Mantém um limite para a largura da imagem */
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -54,7 +56,8 @@ footer {
     background-color: #444;
     padding: 10px;
     margin-top: 20px;
-    max-width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* Ajuste da logo */
@@ -62,7 +65,7 @@ footer {
     width: fit-content;
     background-color: #222;
     border-radius: 60px;
-    padding: 10px 40px; /* Padding ajustado para evitar que ultrapasse a tela */
+    padding: 10px 20px; /* Ajustado para não ultrapassar em telas pequenas */
     display: inline-block;
     margin: 0 auto; /* Centraliza a logo */
 }
@@ -70,7 +73,7 @@ footer {
 /* Ajuste do hover */
 .hover {
     background-color: black;
-    padding: 10px 30px; /* Padding ajustado */
+    padding: 10px 20px; /* Ajustado */
     display: inline-block;
     border-radius: 40px;
     max-width: 100%;
@@ -81,7 +84,27 @@ footer {
     max-width: 300px; /* Tamanho máximo da imagem */
     height: auto; /* Mantém a proporção */
     background-color: #0000005e;
-    padding-left: 450px;
-    padding-right: 450px;
+    padding-left: 10%; /* Ajusta para telas menores */
+    padding-right: 10%; /* Ajusta para telas menores */
     border-radius: 40px;
+}
+
+/* Media Queries para telas menores (Responsividade) */
+@media (max-width: 768px) {
+    .logo {
+        padding: 10px 15px; /* Ajusta o padding para telas menores */
+    }
+    .hover {
+        padding: 8px 15px; /* Ajuste no hover */
+    }
+    .logo1 {
+        padding-left: 5%; /* Ajuste nas margens laterais para telas pequenas */
+        padding-right: 5%;
+    }
+    header {
+        padding: 15px; /* Menos padding em telas pequenas */
+    }
+    .imagem img {
+        width: 90%; /* Ajuste de largura para telas menores */
+    }
 }

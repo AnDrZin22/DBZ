@@ -34,15 +34,17 @@ nav ul li {
 }
 
 nav a {
-    color: #ffcc00;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .sobre {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.897);
+    background-color: rgba(255, 255, 255, 0.445);
     max-width: 100%;
     box-sizing: border-box;
+    font-family: DB;
+    color: #000000;
 }
 
 .imagem img {
@@ -87,6 +89,12 @@ footer {
     padding-left: 10%; /* Ajusta para telas menores */
     padding-right: 10%; /* Ajusta para telas menores */
     border-radius: 40px;
+}
+
+.hover:hover{
+    background-color: #444;
+    cursor: pointer; /* Mostrar que é clicável */
+    transition: background-color 0.3s ease; /* Efeito de transição suave para a cor do fundo */
 }
 
 /* Media Queries para telas menores (Responsividade) */

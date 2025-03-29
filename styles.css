@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "DB";
+    src: url(fonts/Cocogoose-Pro-Semilight-trial.ttf) format('opentype'),
+         url(fonts/Cocogoose-Pro-Semilight-trial.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "DB", sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #000000); /* Gradiente de cima para baixo */
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+header {
+    background: linear-gradient(to bottom, #000000, #777);
+    padding: 20px;
+    max-width: 100vw; /* Garante que o header não ultrapasse a largura da tela */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.sobre {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.897);
+    max-width: 100vw;
+}
+
+.imagem img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #444;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 100vw;
+}
+
+/* Ajuste da logo */
+.logo {
+    width: fit-content;
+    background-color: #222;
+    border-radius: 60px;
+    padding: 10px 40px; /* Padding ajustado para evitar que ultrapasse a tela */
+    display: inline-block;
+    margin: 0 auto; /* Centraliza a logo */
+}
+
+/* Ajuste do hover */
+.hover {
+    background-color: black;
+    padding: 10px 30px; /* Padding ajustado */
+    display: inline-block;
+    border-radius: 40px;
+    max-width: 100%;
+}
+
+.logo1 {
+    width: 100%;
+    max-width: 300px; /* Tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção */
+    background-color: #0000005e;
+    padding-left: 450px;
+    padding-right: 450px;
+    border-radius: 40px;
+}

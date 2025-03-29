@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "DB";
+    src: url(fonts/Cocogoose-Pro-Semilight-trial.ttf) format('opentype'),
+         url(fonts/Cocogoose-Pro-Semilight-trial.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "DB", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #777);
+}
+
+header {
+    background: linear-gradient(to bottom, #000000, #777);
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#base img {
+    width: 50%;  /* Ajuste a porcentagem para o tamanho desejado */
+    max-width: 300px; /* Define o tamanho máximo da imagem */
+    height: auto;  /* Mantém a proporção original da imagem */
+}
+
+.dragon{
+
+    width: 200px;
+}
+.ssj {
+    width: 200px;
+}
+
+.ssj2 {
+    width: 300px;
+}
+
+.ssj3{
+    width: 220px;
+}
+
+.ssj4{
+    width: 300px;
+}
+
+.ssjg{
+    width: 300px;
+}
+
+.ssjb{
+    width: 300px;
+}
+
+.ui{
+    width: 300px;
+}
+
+.mui{
+    width: 300px;
+}
+
+.R{
+    width: 250px;
+}
+
+.botao-voltar {
+    color: #ffffff;
+    background-color: #000000;
+    font-family: "DB", sans-serif;
+    padding: 10px 20px; /* Melhor usar padding com valores de lado específicos */
+    border-radius: 20px;
+    border: none; /* Remover borda para garantir aparência limpa */
+    font-size: 16px; /* Ajuste do tamanho da fonte para ficar mais equilibrado */
+    cursor: pointer; /* Mostrar que é clicável */
+    transition: background-color 0.3s ease; /* Efeito de transição suave para a cor do fundo */
+}
+
+.botao-voltar:hover {
+    background-color: #333333; /* Cor mais clara no hover */
+}
+
+
